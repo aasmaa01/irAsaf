@@ -1,12 +1,12 @@
 import React from 'react';
-import Imene from "../../../images/Imene.jpg";
-import BackLW from "../../../images/BackLW.jpg";
-import Rym from "../../../images/Rym.jpg";
-import Asma from "../../../images/Asma.jpg";
-import Sarah from "../../../images/Sarah.jpg";
-
+import BackLW from "../../images/BackLW.jpg";
+import Imene from "../../images/Imene.jpg";
+import Rym from "../../images/Rym.jpg";
+import Asma from "../../images/Asma.jpg";
+import Sarah from "../../images/Sarah.jpg";
 import AppearanceToggleDropdown from '@/components/appearance-dropdown';
 import TeamMember from '@/components/TeamMember';
+
 
 function About() {
   return (
