@@ -1,6 +1,6 @@
 import React from 'react';
 import Imene from "../../../images/Imene.jpg";
-import BackLW from "../../../images/lw.jpg";
+import BackLW from "../../../images/BackLW.jpg";
 import Rym from "../../../images/Rym.jpg";
 import Asma from "../../../images/Asma.jpg";
 import Sarah from "../../../images/Sarah.jpg";
