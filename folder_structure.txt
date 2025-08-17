@@ -1,0 +1,294 @@
+Structure du dossier
+C:.
+|   .editorconfig
+|   .env
+|   .env.example
+|   .gitattributes
+|   .gitignore
+|   .prettierignore
+|   .prettierrc
+|   artisan
+|   components.json
+|   composer.json
+|   composer.lock
+|   eslint.config.js
+|   folder_structure.txt
+|   package-lock.json
+|   package.json
+|   phpunit.xml
+|   README.md
+|   tsconfig.json
+|   vite.config.ts
+|   
++---.github
+|   \---workflows
+|           lint.yml
+|           tests.yml
+|           
++---app
+|   +---Http
+|   |   +---Controllers
+|   |   |   |   Controller.php
+|   |   |   |   
+|   |   |   +---Auth
+|   |   |   |       AuthenticatedSessionController.php
+|   |   |   |       ConfirmablePasswordController.php
+|   |   |   |       EmailVerificationNotificationController.php
+|   |   |   |       EmailVerificationPromptController.php
+|   |   |   |       NewPasswordController.php
+|   |   |   |       PasswordResetLinkController.php
+|   |   |   |       RegisteredUserController.php
+|   |   |   |       VerifyEmailController.php
+|   |   |   |       
+|   |   |   \---Settings
+|   |   |           PasswordController.php
+|   |   |           ProfileController.php
+|   |   |           
+|   |   +---Middleware
+|   |   |       HandleAppearance.php
+|   |   |       HandleInertiaRequests.php
+|   |   |       
+|   |   \---Requests
+|   |       +---Auth
+|   |       |       LoginRequest.php
+|   |       |       
+|   |       \---Settings
+|   |               ProfileUpdateRequest.php
+|   |               
+|   +---Models
+|   |       User.php
+|   |       
+|   \---Providers
+|           AppServiceProvider.php
+|           
++---bootstrap
+|   |   app.php
+|   |   providers.php
+|   |   
+|   \---cache
+|           .gitignore
+|           packages.php
+|           services.php
+|           
++---config
+|       app.php
+|       auth.php
+|       cache.php
+|       database.php
+|       filesystems.php
+|       inertia.php
+|       logging.php
+|       mail.php
+|       queue.php
+|       services.php
+|       session.php
+|       
++---database
+|   |   .gitignore
+|   |   
+|   +---factories
+|   |       UserFactory.php
+|   |       
+|   +---migrations
+|   |       0001_01_01_000000_create_users_table.php
+|   |       0001_01_01_000001_create_cache_table.php
+|   |       0001_01_01_000002_create_jobs_table.php
+|   |       
+|   \---seeders
+|           DatabaseSeeder.php
+|           
++---node_modules..     
++---public
+|   |   .htaccess
+|   |   apple-touch-icon.png
+|   |   favicon.ico
+|   |   favicon.svg
+|   |   index.php
+|   |   logo.svg
+|   |   robots.txt
+|   |   
+|   \---build
+|       |   manifest.json
+|       |   
+|       \---assets..
+|               
++---resources
+|   +---css
+|   |       app.css
+|   |       
+|   +---js
+|   |   |   app.tsx
+|   |   |   ssr.tsx
+|   |   |   
+|   |   +---components
+|   |   |   |   app-content.tsx
+|   |   |   |   app-header.tsx
+|   |   |   |   app-logo-icon.tsx
+|   |   |   |   app-logo.tsx
+|   |   |   |   app-shell.tsx
+|   |   |   |   app-sidebar-header.tsx
+|   |   |   |   app-sidebar.tsx
+|   |   |   |   appearance-dropdown.tsx
+|   |   |   |   appearance-tabs.tsx
+|   |   |   |   breadcrumbs.tsx
+|   |   |   |   delete-user.tsx
+|   |   |   |   heading-small.tsx
+|   |   |   |   heading.tsx
+|   |   |   |   icon.tsx
+|   |   |   |   input-error.tsx
+|   |   |   |   nav-footer.tsx
+|   |   |   |   nav-main.tsx
+|   |   |   |   nav-user.tsx
+|   |   |   |   text-link.tsx
+|   |   |   |   user-info.tsx
+|   |   |   |   user-menu-content.tsx
+|   |   |   |   
+|   |   |   \---ui
+|   |   |           alert.tsx
+|   |   |           avatar.tsx
+|   |   |           badge.tsx
+|   |   |           breadcrumb.tsx
+|   |   |           button.tsx
+|   |   |           card.tsx
+|   |   |           checkbox.tsx
+|   |   |           collapsible.tsx
+|   |   |           dialog.tsx
+|   |   |           dropdown-menu.tsx
+|   |   |           icon.tsx
+|   |   |           input.tsx
+|   |   |           label.tsx
+|   |   |           navigation-menu.tsx
+|   |   |           placeholder-pattern.tsx
+|   |   |           select.tsx
+|   |   |           separator.tsx
+|   |   |           sheet.tsx
+|   |   |           sidebar.tsx
+|   |   |           skeleton.tsx
+|   |   |           toggle-group.tsx
+|   |   |           toggle.tsx
+|   |   |           tooltip.tsx
+|   |   |           
+|   |   +---hooks
+|   |   |       use-appearance.tsx
+|   |   |       use-initials.tsx
+|   |   |       use-mobile-navigation.ts
+|   |   |       use-mobile.tsx
+|   |   |       
+|   |   +---layouts
+|   |   |   |   app-layout.tsx
+|   |   |   |   auth-layout.tsx
+|   |   |   |   
+|   |   |   +---app
+|   |   |   |       app-header-layout.tsx
+|   |   |   |       app-sidebar-layout.tsx
+|   |   |   |       
+|   |   |   +---auth
+|   |   |   |       auth-card-layout.tsx
+|   |   |   |       auth-simple-layout.tsx
+|   |   |   |       auth-split-layout.tsx
+|   |   |   |       
+|   |   |   \---settings
+|   |   |           layout.tsx
+|   |   |           
+|   |   +---lib
+|   |   |       utils.ts
+|   |   |       
+|   |   +---pages
+|   |   |   |   dashboard.tsx
+|   |   |   |   welcome.tsx
+|   |   |   |   
+|   |   |   +---auth
+|   |   |   |       confirm-password.tsx
+|   |   |   |       forgot-password.tsx
+|   |   |   |       login.tsx
+|   |   |   |       register.tsx
+|   |   |   |       reset-password.tsx
+|   |   |   |       verify-email.tsx
+|   |   |   |       
+|   |   |   \---settings
+|   |   |           appearance.tsx
+|   |   |           password.tsx
+|   |   |           profile.tsx
+|   |   |           
+|   |   \---types
+|   |           global.d.ts
+|   |           index.d.ts
+|   |           vite-env.d.ts
+|   |           
+|   \---views
+|           app.blade.php
+|           
++---routes
+|       auth.php
+|       console.php
+|       settings.php
+|       web.php
+|       
++---storage
+|   +---app
+|   |   |   .gitignore
+|   |   |   
+|   |   +---private
+|   |   |       .gitignore
+|   |   |       
+|   |   \---public
+|   |           .gitignore
+|   |           
+|   +---framework
+|   |   |   .gitignore
+|   |   |   
+|   |   +---cache
+|   |   |   |   .gitignore
+|   |   |   |   
+|   |   |   \---data
+|   |   |           .gitignore
+|   |   |           
+|   |   +---sessions
+|   |   |       .gitignore
+|   |   |       
+|   |   +---testing
+|   |   |       .gitignore
+|   |   |       
+|   |   \---views
+|   |           .gitignore
+|   |           077b61465f20b76cab3fc5c0ed32e789.php
+|   |           1175b0a2aa9ecb36487d690515be6e8c.php
+|   |           1d816dbe58a14c877ca6364ac36524ef.php
+|   |           3a2f801361d2946c4c049e0562f5121e.php
+|   |           415e5a5b0ab3c5f0e3757c718f5768ae.php
+|   |           460bace351e5b784ee262192c6c1d5ae.php
+|   |           5b4f093e54f2260a3f65a86ca587968f.php
+|   |           a044fde93777b80b2603921df597bc48.php
+|   |           a292c92f17d3be61ddce4ef629816510.php
+|   |           b0022ae1e583007ff0097c1832322e3a.php
+|   |           b82e00d54a34727e9b620f7b22e4de28.php
+|   |           c13e56d7b9cc7b2b3f52c98b45b78a04.php
+|   |           c46bced42bd9e590902c5b47764a9248.php
+|   |           ddc899f7c519c831119d44d24747e536.php
+|   |           ffddbf92bdaa33aaf470211618a1f400.php
+|   |           
+|   \---logs
+|           .gitignore
+|           laravel.log
+|           
++---tests
+|   |   TestCase.php
+|   |   
+|   +---Feature
+|   |   |   DashboardTest.php
+|   |   |   
+|   |   +---Auth
+|   |   |       AuthenticationTest.php
+|   |   |       EmailVerificationTest.php
+|   |   |       PasswordConfirmationTest.php
+|   |   |       PasswordResetTest.php
+|   |   |       RegistrationTest.php
+|   |   |       
+|   |   \---Settings
+|   |           PasswordUpdateTest.php
+|   |           ProfileUpdateTest.php
+|   |           
+|   \---Unit
+|           ExampleTest.php
+|           
+\---vendor
