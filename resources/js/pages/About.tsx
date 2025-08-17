@@ -1,9 +1,10 @@
 import React from 'react';
-import BackLW from "../../images/lw.jpg";
-import Imene from "../../images/Imene.jpg";
-import Rym from "../../images/Rym.jpg";
-import Asma from "../../images/Asma.jpg";
-import Sarah from "../../images/Sarah.jpg";
+import Imene from "../../../images/Imene.jpg";
+import BackLW from "../../../images/lw.jpg";
+import Rym from "../../../images/Rym.jpg";
+import Asma from "../../../images/Asma.jpg";
+import Sarah from "../../../images/Sarah.jpg";
+
 import AppearanceToggleDropdown from '@/components/appearance-dropdown';
 import TeamMember from '@/components/TeamMember';
 
