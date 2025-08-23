@@ -1,12 +1,12 @@
 # ✨ IRASAF ✨ 
 
-IRASAF is a **family-driven e-commerce store** built by me, Asma, for me and my sisters. This platform showcases our handmade and curated products, helping us share our creativity with the world while providing an enjoyable shopping experience.  
+IRASAF is a **family-driven e-commerce platform** where users can explore and purchase unique handmade products created by our members. Built with Laravel, React, and Tailwind CSS, it offers a seamless shopping experience with secure authentication, responsive design, and personalized features.
 
-We aim to bring unique and high-quality products to our customers, featuring items created by each family member.  
+
 
 ---
 
-## Built With
+## Tech Stack
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
@@ -24,7 +24,7 @@ We aim to bring unique and high-quality products to our customers, featuring ite
 ### Current Features
 - **Authentication:** Secure login and registration for users.  
 - **Appearance Mode:** Light and dark mode toggle for a comfortable browsing experience.
-- **Member Profiles:** Showcase each family member and their handmade specialties.  
+- **Member Profiles**: Display each member and their unique products.
 
 
 ### Upcoming / Planned Features
@@ -42,6 +42,31 @@ We aim to bring unique and high-quality products to our customers, featuring ite
 - **Blog / Story Section:** Share family stories, product origins, and handmade tips.  
 
 
+---
+## Installation
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/your-username/irasaf.git
+```
+### 2. Install Backend Dependencies:
+```bash
+cd irasaf
+composer install
+```
+### 3. Install Frontend Dependencies:
+```bash
+npm install
+```
+### 4. Start the Development Server:
+```bash
+npm run dev
+php artisan serve
+```
+
+Now you can access the application at http://localhost:8000
+
+
 
 ---
 
@@ -56,14 +81,11 @@ We aim to bring unique and high-quality products to our customers, featuring ite
 
 ---
 
-## About the Project
 
-I, Asma, am building this website for me and my sisters to share our **business and handmade products**. This is an e-commerce store where each of us can showcase our skills and reach more customers online.  
+
+
 
 Many features are planned for the future, including product categorization, a checkout system, and personalized recommendations.
-
-
-
 ---
 
 ## License
