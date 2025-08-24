@@ -11,11 +11,8 @@ class ProductController extends Controller
 {
     public function index(){
     $products = Product::orderBy('created_at', 'desc')->paginate(12);
-    return Inertia::render('Products/Index', compact('products'));
+    return Inertia::render('Products/Index', ['products'=> $products]);
     }
-    public function show(Product $product){
-    return Inertia::render('Products/Show', ['product' => $product]);
-}
 
 }
 
