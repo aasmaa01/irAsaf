@@ -16,6 +16,11 @@ Route::get('/about', function () {
 
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+/*
+Route::get('/products', function(){
+    return inertia('/Products/Index'); });*/
+
+
 Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
 
 Route::middleware(['auth', 'verified'])->group(function () {

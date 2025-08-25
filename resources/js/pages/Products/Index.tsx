@@ -1,7 +1,7 @@
 import React from 'react';
 import { usePage } from '@inertiajs/react';
-import Layout from '@/layouts/app-layout'; // make sure this points to your layout
-import { Product } from '@/types'; // adjust the path to your Product type
+import Layout from '@/layouts/app-layout';
+import { Product } from '@/types'; 
 
 const Index: React.FC = () => {
   const { products } = usePage().props as { products: { data: Product[] } };
@@ -28,13 +28,16 @@ const Index: React.FC = () => {
               >
                 <div className="w-full h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
                   <img
-                    src={product.image_url || '/logo.svg'}
+                    src={ 'https://chrisdellasega.com/wp-content/uploads/2023/03/image-placeholder.jpg'}
                     alt={product.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{product.title}</h2>
-                <p className="text-gray-500 dark:text-gray-400 mt-1">${product.price.toFixed(2)}</p>
+                <p className="text-gray-500 dark:text-gray-400 mt-1">${Number(product.price).toFixed(2)}</p>
+                <p className="text-gray-500 dark:text-gray-400 mt-1">
+  
+</p>
                 <p className="text-gray-600 dark:text-gray-300 mt-2 text-sm line-clamp-3">{product.description}</p>
                 <button className="mt-auto bg-indigo-600 text-white rounded px-4 py-2 hover:bg-indigo-700 transition mt-4">
                   View Product
