@@ -39,7 +39,8 @@ IRASAF is a **family-driven e-commerce platform** where users can explore and pu
 - **Admin Dashboard:** Manage products, orders, and users efficiently.  
 - **Notifications:** Email or in-app notifications for updates, offers, and new products.  
 - **Reviews & Ratings:** Let customers share feedback on products.  
-- **Blog / Story Section:** Share family stories, product origins, and handmade tips.  
+- **Blog / Story Section:** Share family stories, product origins, and handmade tips.
+- **Personalized Orders:** Allow customers to customize their gifts or handmade items (choose colors, names, messages, packaging, etc.) before placing the order.
 
 
 ---
